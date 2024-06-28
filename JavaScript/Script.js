@@ -1,5 +1,5 @@
 const disruption = ["Lower Back Pain", "Shoulder-Pain", "Hip Pain", "Hot Sleeper", "Cold Sleeper", "Tossing/Turning"];
-const brand = ["Pressuresmart", "Beautyrest Black", "iSeries", "Pressuresmart", "Beautyrest Black", "Omni-Channel"];
+const brand = ["Pressuresmart", "Tempur-Pedic", "iSeries", "Stearns & Foster", "Beautyrest Black", "King Koil"];
 const tools = ["X-Ray", "Adjustable Base", "Ezzz Credit", "X-Ray Tool", "Ask For The Sale", "Ezzz Credit"];
 const dBlock = document.getElementsByClassName('dice-block', "")
 const images = [
