@@ -1,8 +1,6 @@
 body {
     background-color: #AEB7BF;
-    height: 100vh;
-    
-}
+    }
 .descriptor {
     border: 5px solid #254559;
     background-color: #173040;
@@ -29,6 +27,10 @@ header h1 {
     grid-area: 2/2;
     height: 50px;
     margin-bottom: 10px;
+}
+p {
+    text-align: center;
+    font-size: 2rem;
 }
 @media only screen and (max-width:600px) {
     header {
