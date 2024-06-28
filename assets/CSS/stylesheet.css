@@ -3,6 +3,33 @@ body {
     height: 100vh;
     
 }
+.descriptor {
+    border: 5px solid #254559;
+    background-color: #173040;
+    text-align: center;
+    color: white;
+
+}
+.descriptor h2 {
+    height: 20%;
+    background-color:#062540;
+    margin: 0;
+}
+header {
+    border: 5px solid #254559;
+        background-color: #173040;
+        color: white;
+}
+header h1 {
+    grid-area: head;
+    text-align: center;
+}
+.button {
+    flex: 1 1 50px;
+    grid-area: 2/2;
+    height: 50px;
+    margin-bottom: 10px;
+}
 @media only screen and (max-width:600px) {
     header {
         display: grid;
@@ -11,9 +38,6 @@ body {
         grid-template-areas: 
         "head head head"
         "button button button";
-        border: 5px solid #254559;
-        background-color: #173040;
-        color: white;
     }
     #dice-container {
         display: grid;
@@ -36,16 +60,6 @@ body {
         padding-right: 10px;
         
     }
-    header h1 {
-        grid-area: head;
-        text-align: center;
-    }
-    .button {
-        flex: 1 1 50px;
-        grid-area: 2/2;
-        height: 50px;
-        margin-bottom: 10px;
-    }
     #die1 {
         grid-area: die1;
         ;
@@ -55,18 +69,6 @@ body {
     }
     #die3 {
         grid-area: die3;
-    }
-    .descriptor {
-        border: 5px solid #254559;
-        background-color: #173040;
-        text-align: center;
-        color: white;
-    
-    }
-    .descriptor h2 {
-        height: 20%;
-        background-color:#062540;
-        margin: 0;
     }
     #card1 {
         grid-area: card1;
@@ -83,5 +85,60 @@ body {
         display: grid;
         grid-area: foot;
         text-align: center;
+        height: auto;
+    }
+}
+@media only screen and (min-width:601px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "head head head"
+        "button button button";
+    }
+    #dice-container {
+            display: grid;
+            width: 100%;
+            gap: 25px;
+            padding: 5px;
+            grid-template-areas: 
+            "die1 die2 die3"
+            "card1 card2 card3"
+            "foot foot foot";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            justify-content: center;
+        }
+        .dice-block {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            padding-right: 10px;
+        }
+    
+        #die1 {
+            grid-area: die1;
+        }
+        #die2 {
+            grid-area: die2;
+        }
+        #die3 {
+            grid-area: die3;
+        }
+        #card1 {
+            grid-area: card1;
+        }
+        #card2 {
+            grid-area: card2;
+        }
+        #card3 {
+            grid-area: card3;
+        }
+    
+        footer {
+            grid-area: foot;
+            text-align: center;
+        }
     }
 }
