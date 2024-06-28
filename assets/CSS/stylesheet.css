@@ -1,0 +1,86 @@
+body {
+    background-color: #AEB7BF;
+    
+}
+@media only screen and (max-width:600px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "head head head"
+        "button button button";
+        border: 5px solid #254559;
+        background-color: #173040;
+        color: white;
+    }
+    #dice-container {
+        display: grid;
+        width: min(99%,600px);
+        gap: 25px;
+        padding: 5px;
+        grid-template-areas: 
+        "die1 card1 card1"
+        "die2 card2 card2"
+        "die3 card3 card3";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+
+    .dice-block {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        padding-right: 10px;
+        
+    }
+    header h1 {
+        grid-area: head;
+        text-align: center;
+    }
+    .button {
+        flex: 1 1 50px;
+        grid-area: 2/2;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    #die1 {
+        grid-area: die1;
+        ;
+    }
+    #die2 {
+        grid-area: die2;
+    }
+    #die3 {
+        grid-area: die3;
+    }
+    .descriptor {
+        border: 5px solid #254559;
+        background-color: #173040;
+        text-align: center;
+        color: white;
+    
+    }
+    .descriptor h2 {
+        height: 20%;
+        background-color:#062540;
+        margin: 0;
+    }
+    #card1 {
+        grid-area: card1;
+    }
+
+    #card2 {
+        grid-area: card2;
+    }
+
+    #card3 {
+        grid-area: card3;
+    }
+    footer {
+        display: grid;
+        grid-area: foot;
+        text-align: center;
+    }
+}
