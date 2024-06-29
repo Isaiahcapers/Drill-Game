@@ -6,7 +6,7 @@ body {
     background-color: #173040;
     text-align: center;
     color: white;
-
+    word-wrap: break-word;
 }
 .descriptor h2 {
     height: 20%;
